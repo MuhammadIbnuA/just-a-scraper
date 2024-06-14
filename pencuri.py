@@ -38,7 +38,7 @@ def main():
     st.title("Google Play Review Scraper & Translator")
 
     app_id = st.text_input("Enter the Google Play Store app ID:")
-    count = st.number_input("Enter the number of reviews to fetch per batch (max 400):", value=100, min_value=1, max_value=400)
+    count = st.number_input("Enter the number of reviews to fetch per batch (max 400):", value=100, min_value=1, max_value=25000)
 
     if st.button("Scrape and Translate Reviews"):
         with st.spinner("Scraping and translating reviews..."):
